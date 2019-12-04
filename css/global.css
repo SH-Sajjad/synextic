@@ -1,0 +1,169 @@
+.h1 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 73px;
+  color: #363840;
+}
+.h2 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #f16334;
+}
+.h3 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #363840;
+}
+.h4 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #363840;
+}
+.h5 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363840;
+}
+.h6 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7b7d84;
+}
+.p {
+  font-family: 'Muli', sans-serif;
+  color: #7B7D84;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+.bg_css {
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.img_css {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.cmn_heading {
+  /*Padding hobe*/
+}
+.cmn_heading h3 {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #363840;
+}
+.after {
+  position: absolute;
+  content: "";
+}
+.overlay {
+  /*background: $col6;*/
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  color: #f16334;
+  border-color: #f16334;
+  padding: 12px 32px;
+  border-radius: 0;
+  text-transform: capitalize;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+.btn:hover {
+  color: #ffffff;
+  background-color: #ed3200;
+  border-color: #ed3200;
+}
+.scrolltop {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  background: #172e5e;
+  box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.4);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 29px;
+}
+.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+header.fix {
+  background: #ffffff;
+}
+#scrolltotop_parent {
+  background: #006f9e;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1002 !important;
+}
+#scrolltotop_parent:hover {
+  opacity: 0.7;
+  transition: 0.1s;
+}
+.scrolltotop_circle {
+  border-radius: 50%;
+}
+.scrolltotop_round_corners {
+  border-radius: 5px;
+}
+#scrolltotop_arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #ffffff;
+  margin: 0 auto;
+  margin-top: 19px;
+}
+#scrolltotop_arrow:focus {
+  opacity: 0.7;
+  transition: 0.1s;
+}
+.scrolltotop_hide_onload {
+  display: none;
+}

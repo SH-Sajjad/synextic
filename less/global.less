@@ -1,0 +1,233 @@
+@col1: #fff;  // white
+@col2: #363840; // black
+@col3: #F16334; // red
+@col4: #7B7D84; // grey
+@font2: 'Lato', sans-serif;
+@font1: 'Muli', sans-serif;
+
+.tran(@time) {
+    -webkit-transition: all linear @time;
+    -moz-transition: all linear @time;
+    -ms-transition: all linear @time;
+    -o-transition: all linear @time;
+}
+
+.anim(@name, @duration: 300ms, @delay: 0, @ease: ease) {
+    -webkit-animation: @name @duration @delay @ease;
+    -moz-animation: @name @duration @delay @ease;
+    -ms-animation: @name @duration @delay @ease;
+    animation: @name @duration @delay @ease;
+}
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name {
+        @arguments();
+    }
+
+    @-webkit-keyframes @name {
+        @arguments();
+    }
+
+    @keyframes @name {
+        @arguments();
+    }
+}
+
+.bor(@value) {
+    -webkit-border-radius: @value;
+    -ms-border-radius: @value;
+    border-radius: @value;
+}
+
+.shadow(@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.h1 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 73px;
+    color: @col2;
+}
+
+.h2 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: @col3;
+}
+
+.h3 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: @col2;
+}
+
+.h4 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: @col2;
+}
+
+.h5 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: @col2;
+}
+
+.h6 {
+    font-family: @font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: @col4;
+}
+.p {
+    font-family: @font1;
+    color: #7B7D84;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.bg_css {
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.img_css{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.cmn_heading {
+    /*Padding hobe*/
+
+    h3 {
+        .h3;
+    }
+}
+
+.mini_heading {}
+
+.after {
+    position: absolute;
+    content: "";
+}
+
+.overlay {
+    /*background: $col6;*/
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    color: @col3;
+    border-color: @col3;
+    padding: 12px 32px;
+    border-radius: 0;
+    text-transform: capitalize;
+
+    .tran(0.4s);
+
+    &:hover {
+        color: @col1;
+        background-color: #ed3200;
+        border-color: #ed3200;
+    }
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    background: #172e5e;
+    box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.4);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: @col1;
+    font-size: 29px;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+header.fix {
+    background: @col1;
+}
+
+#scrolltotop_parent {
+    background: #006f9e;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1002 !important;
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.1s;
+    }
+}
+
+.scrolltotop_circle {
+    border-radius: 50%;
+}
+
+.scrolltotop_round_corners {
+    border-radius: 5px;
+}
+
+#scrolltotop_arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid @col1;
+    margin: 0 auto;
+    margin-top: 19px;
+
+    &:focus {
+        opacity: 0.7;
+        transition: 0.1s;
+    }
+}
+
+.scrolltotop_hide_onload {
+    display: none;
+}
